@@ -1,0 +1,17 @@
+header {
+  background-color: blueviolet;
+  height: 55px;
+}
+
+h2 {
+  margin-left: 12.5em;
+}
+
+h1 {
+  margin-left: 0.5em;
+}
+
+img {
+  width: 300px;
+  margin-bottom: 1em;
+}
