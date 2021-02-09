@@ -15,7 +15,8 @@ function inputEntry(event) {
   // var entry = {
   //  image: $form.elements.image.value,
   //  title: $form.elements.title.value,
-  //  notes: $form.elements.notes.value
+  //  notes: $form.elements.notes.value,
+  //  nextEntryId : 1
   // };
 
 }
