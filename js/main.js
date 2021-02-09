@@ -2,7 +2,9 @@
 /* exported data */
 var $inputUrl = document.querySelector('input');
 var $image = document.querySelector('img');
-// var $value = $inputUrl.value;
+var $form = document.querySelector('form');
+// var $value = $form.value;
+// var entry = {};
 
 function addImage(event) {
   // var updateImage =
@@ -10,3 +12,9 @@ function addImage(event) {
 }
 
 $inputUrl.addEventListener('input', addImage);
+
+function inputEntry(event) {
+
+}
+
+$form.addEventListener('submit', inputEntry);
