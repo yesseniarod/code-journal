@@ -3,17 +3,20 @@
 var $inputUrl = document.querySelector('input');
 var $image = document.querySelector('img');
 var $form = document.querySelector('form');
-// var $value = $form.value;
-// var entry = {};
 
 function addImage(event) {
-  // var updateImage =
-  $image.setAttribute('src', 'https://s3.amazonaws.com/cdn-origin-etr.akc.org/wp-content/uploads/2017/11/12213218/German-Shepherd-on-White-00.jpg');
+  $image.setAttribute('src', $form.elements.image.value);
 }
 
 $inputUrl.addEventListener('input', addImage);
 
 function inputEntry(event) {
+  event.preventDefault();
+  // var entry = {
+  //  image: $form.elements.image.value,
+  //  title: $form.elements.title.value,
+  //  notes: $form.elements.notes.value
+  // };
 
 }
 
