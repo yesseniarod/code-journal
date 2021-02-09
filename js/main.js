@@ -12,13 +12,12 @@ $inputUrl.addEventListener('input', addImage);
 
 function inputEntry(event) {
   event.preventDefault();
-  // var entry = {
-  //  image: $form.elements.image.value,
-  //  title: $form.elements.title.value,
-  //  notes: $form.elements.notes.value,
-  //  nextEntryId : 1
-  // };
-
+  var entry = {
+    image: $form.elements.image.value,
+    title: $form.elements.title.value,
+    notes: $form.elements.notes.value
+  };
+  entry.nextEntryId = 1;
 }
 
 $form.addEventListener('submit', inputEntry);
