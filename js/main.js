@@ -24,6 +24,7 @@ function inputEntry(event) {
     notes: $form.elements.notes.value
   };
   entry.nextEntryId = 1;
+  $form.reset();
 }
 
 $form.addEventListener('submit', inputEntry);
