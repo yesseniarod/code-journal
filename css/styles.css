@@ -3,8 +3,9 @@ body {
 }
 
 header {
-  background-color: blueviolet;
+  background-color: mediumpurple;
   height: 3em;
+  color: white;
 }
 
 h2 {
@@ -46,5 +47,8 @@ textarea {
 
 button {
   margin-top: 0.5em;
-  width: 4.5em;
+  width: 5em;
+  color: white;
+  border-radius: 0.5em;
+  background-color: mediumpurple;
 }
