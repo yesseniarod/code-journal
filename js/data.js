@@ -3,7 +3,7 @@ var data = {
   view: 'entry-form',
   entries: [],
   editing: null,
-  nextEntryId: 1
+  nextEntryId: 0
 };
 
 var previousData = localStorage.getItem('data-local-storage');
@@ -17,3 +17,5 @@ function handleData(event) {
 }
 
 window.addEventListener('unload', handleData);
+
+data.nextEntryId = data.entries.length + 2;

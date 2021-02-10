@@ -20,7 +20,8 @@ function inputEntry(event) {
     notes: $form.elements.notes.value
   };
 
-  entry.nextEntryId = data.entries.length;
+  entry.entryId = data.entries.length + 1;
+  entry.nextEntryId = data.entries.length + 2;
 
   data.entries.unshift(entry);
 
@@ -29,15 +30,3 @@ function inputEntry(event) {
 }
 
 $form.addEventListener('submit', inputEntry);
-
-// var previousEntry = localStorage.getItem('entry-local-storage');
-// if (previousEntry !== null) {
-//  entry = JSON.parse(previousEntry);
-// }
-
-// function handleInput(event) {
-//  var inputEntry = JSON.stringify(entry);
-//  localStorage.setItem('entry-local-storage', inputEntry);
-// }
-
-// window.addEventListener('beforeunload', handleInput);
