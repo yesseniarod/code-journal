@@ -31,12 +31,13 @@ div[data-view="entry-form"] {
 input[type="url"],
 input[type="text"] {
   width: 100%;
-  margin-top: 0.5em;
-  margin-bottom: 0.7em;
+  margin-top: 0.3em;
+  margin-bottom: 0.5em;
 }
 
-input[name="notes"] {
-  height: 4.5em;
+textarea {
+  width: 100%;
+  margin-top: 0.3em;
 }
 
 .button {
