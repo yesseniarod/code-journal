@@ -13,12 +13,52 @@
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/layout.css">
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
 </head>
 <body>
-  <header>
-  </header>
+
+      <header>
+      <h2>Code Journal</h2>
+      </header>
+
+<div class="container">
   <main>
+    <h1>New Entry</h1>
+    <div data-view="entry-form">
+      <form>
+        <div class="row">
+          <div class="column-half">
+          <img src="./images/placeholder-image-square.jpg" alt="placeholder">
+          </div>
+
+
+          <div class="column-half">
+            <label for="image">Image URL</label>
+            <input type="url" name="image" size="20" required>
+
+            <label for="title">Title</label>
+            <input type="text" name="title" size="20"  required>
+          </div>
+        </div>
+
+          <div class="row">
+
+          <div class="column-full">
+          <label for="notes">Notes</label>
+          <textarea type="text" name="notes" required></textarea>
+            <div class="button">
+            <button>Save</button>
+            </div>
+
+            </div>
+          </div>
+
+        </form>
+    </div>
   </main>
+  </div>
   <script src="js/data.js"></script>
   <script src="js/main.js"></script>
 </body>
