@@ -6,11 +6,8 @@ var $form = document.querySelector('form');
 
 function addImage(event) {
 
-  if ($inputUrl.value.length !== 0) {
-    $image.setAttribute('src', $form.elements.image.value);
-  } else {
-    $image.setAttribute('src', './images/placeholder-image-square.jpg');
-  }
+  $image.setAttribute('src', $form.elements.image.value);
+
 }
 
 $inputUrl.addEventListener('input', addImage);
@@ -28,6 +25,7 @@ function inputEntry(event) {
   data.entries.unshift(entry);
 
   $form.reset();
+  $image.setAttribute('src', 'images/placeholder-image-square.jpg');
 }
 
 $form.addEventListener('submit', inputEntry);
