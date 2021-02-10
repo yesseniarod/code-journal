@@ -4,7 +4,7 @@ body {
 
 header {
   background-color: mediumpurple;
-  height: 3em;
+  height: 2.75em;
   color: white;
 }
 
@@ -51,4 +51,23 @@ button {
   color: white;
   border-radius: 0.5em;
   background-color: mediumpurple;
+  margin-bottom: 2em;
+}
+
+div[data-view="entries"] {
+  display: flex;
+}
+
+ul {
+  list-style: none;
+}
+
+.title {
+  margin-left: -0.1em;
+  margin-bottom: 0.4em;
+  margin-top: 1em;
+}
+
+.notes {
+  margin-bottom: 2em;
 }

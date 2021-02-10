@@ -39,4 +39,8 @@
   h1 {
     margin-left: 0.5em;
   }
+
+  li {
+    display: flex;
+  }
 }
