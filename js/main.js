@@ -20,8 +20,8 @@ function inputEntry(event) {
     notes: $form.elements.notes.value
   };
 
-  entry.entryId = data.entries.length + 1;
-  entry.nextEntryId = data.entries.length + 2;
+  entry.entryId = data.nextEntryId;
+  data.nextEntryId++;
 
   data.entries.unshift(entry);
 
