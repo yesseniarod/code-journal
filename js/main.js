@@ -3,7 +3,6 @@
 var $inputUrl = document.querySelector('input');
 var $image = document.querySelector('img');
 var $form = document.querySelector('form');
-// console.log($inputUrl.value.length);
 
 function addImage(event) {
 
@@ -24,7 +23,21 @@ function inputEntry(event) {
     notes: $form.elements.notes.value
   };
   entry.nextEntryId = 1;
+  Object.assign(data, entry);
+
   $form.reset();
 }
 
 $form.addEventListener('submit', inputEntry);
+
+// var previousEntry = localStorage.getItem('entry-local-storage');
+// if (previousEntry !== null) {
+//  entry = JSON.parse(previousEntry);
+// }
+
+// function handleInput(event) {
+//  var inputEntry = JSON.stringify(entry);
+//  localStorage.setItem('entry-local-storage', inputEntry);
+// }
+
+// window.addEventListener('unload', handleInput);
