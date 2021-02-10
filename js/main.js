@@ -22,8 +22,10 @@ function inputEntry(event) {
     title: $form.elements.title.value,
     notes: $form.elements.notes.value
   };
+
   entry.nextEntryId = 1;
-  Object.assign(data, entry);
+
+  data.entries.unshift(entry);
 
   $form.reset();
 }
@@ -40,4 +42,4 @@ $form.addEventListener('submit', inputEntry);
 //  localStorage.setItem('entry-local-storage', inputEntry);
 // }
 
-// window.addEventListener('unload', handleInput);
+// window.addEventListener('beforeunload', handleInput);
