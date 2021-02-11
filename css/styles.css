@@ -6,12 +6,17 @@ header {
   background-color: mediumpurple;
   height: 2.75em;
   color: white;
+  display: flex;
+  align-items: baseline;
 }
 
 h2 {
-  margin-left: 1em;
   font-size: 1.25em;
   padding-top: 0.5em;
+}
+
+h3 {
+  margin-left: 3em;
 }
 
 h1 {

@@ -36,6 +36,10 @@
     margin-left: 0.5em;
   }
 
+  h2 {
+    margin-left: 5.25em;
+  }
+
   li {
     display: flex;
   }
