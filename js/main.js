@@ -24,7 +24,7 @@ function inputEntry(event) {
   data.nextEntryId++;
 
   data.entries.unshift(entry);
-
+  $ul.prepend(entriesList(entry));
   $form.reset();
   $image.setAttribute('src', 'images/placeholder-image-square.jpg');
 }
@@ -68,10 +68,9 @@ var $ul = document.querySelector('ul');
 function addEntries(event) {
   for (var i = 0; i < data.entries.length; i++) {
     var entryJournal = entriesList(data.entries[i]);
-
+    $ul.appendChild(entryJournal);
   }
-  // console.log(data.entries);
-  $ul.appendChild(entryJournal);
+
 }
 
 document.addEventListener('DOMContentLoaded', addEntries);
