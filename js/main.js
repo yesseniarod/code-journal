@@ -80,7 +80,7 @@ var $dataViewForm = document.querySelector('[data-view]');
 var $mainH1 = document.querySelector('h1');
 var $topPageDiv = document.querySelector('.top-page');
 var $dataViewEntries = document.querySelector('#entries');
-var $entries = document.querySelector('.entries');
+var $entries = document.querySelector('.entriesHeader');
 // console.log($dataViewEntries);
 
 function newEntry(event) {
@@ -93,8 +93,10 @@ function newEntry(event) {
 }
 $new.addEventListener('click', newEntry);
 
+var $button = document.querySelector('button');
+
 function viewEntry(event) {
-  if (event.target.matches('.entries')) {
+  if (event.target.matches('.entriesHeader') || event.target.matches('button')) {
     $dataViewForm.className = 'hidden';
     $mainH1.className = 'hidden';
     $topPageDiv.className = 'top-page';
@@ -104,3 +106,4 @@ function viewEntry(event) {
 }
 
 $entries.addEventListener('click', viewEntry);
+$button.addEventListener('click', viewEntry);
