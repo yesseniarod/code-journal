@@ -67,7 +67,7 @@ var $ul = document.querySelector('ul');
 
 function addEntries(event) {
   for (var i = 0; i < data.entries.length; i++) {
-    var entryJournal = entriesList(data.entries[7]);
+    var entryJournal = entriesList(data.entries[i]);
 
   }
   // console.log(data.entries);
