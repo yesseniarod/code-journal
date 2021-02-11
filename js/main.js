@@ -74,3 +74,33 @@ function addEntries(event) {
 }
 
 document.addEventListener('DOMContentLoaded', addEntries);
+
+var $new = document.querySelector('.new');
+var $dataViewForm = document.querySelector('[data-view]');
+var $mainH1 = document.querySelector('h1');
+var $topPageDiv = document.querySelector('.top-page');
+var $dataViewEntries = document.querySelector('#entries');
+// var $entries = document.querySelector('.entries');
+// console.log($dataViewEntries);
+
+function newEntry(event) {
+  if (event.target.matches('.new')) {
+    $dataViewForm.removeAttribute('class');
+    $mainH1.removeAttribute('class');
+    $topPageDiv.className = 'hidden';
+    $dataViewEntries.className = 'hidden';
+  }
+}
+$new.addEventListener('click', newEntry);
+
+// function viewEntry (event) {
+// if (event.target.matches('.entries')) {
+//  $dataViewForm.className = 'hidden';
+//  $mainH1.className = 'hidden';
+// $topPageDiv.removeAttribute('class');
+// $dataViewEntries.removeAttribute('class');
+
+// }
+// }
+
+// $entries.addEventListener('click', viewEntry);
