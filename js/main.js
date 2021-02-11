@@ -32,7 +32,6 @@ function inputEntry(event) {
 $form.addEventListener('submit', inputEntry);
 
 function entriesList(entry) {
-
   var $parentDiv = document.createElement('div');
   $parentDiv.setAttribute('class', 'row');
 
@@ -64,4 +63,15 @@ function entriesList(entry) {
   return $parentDiv;
 }
 
-entriesList(data.entries[0]);
+var $ul = document.querySelector('ul');
+
+function addEntries(event) {
+  for (var i = 0; i < data.entries.length; i++) {
+    var entryJournal = entriesList(data.entries[7]);
+
+  }
+  // console.log(data.entries);
+  $ul.appendChild(entryJournal);
+}
+
+document.addEventListener('DOMContentLoaded', addEntries);
