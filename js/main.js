@@ -30,3 +30,38 @@ function inputEntry(event) {
 }
 
 $form.addEventListener('submit', inputEntry);
+
+function entriesList(entry) {
+
+  var $parentDiv = document.createElement('div');
+  $parentDiv.setAttribute('class', 'row');
+
+  var $li = document.createElement('li');
+  $parentDiv.appendChild($li);
+
+  var $div = document.createElement('div');
+  $div.setAttribute('class', 'column-half');
+  $li.appendChild($div);
+
+  var $imageEntry = document.createElement('img');
+  $imageEntry.setAttribute('src', entry.image);
+  $div.appendChild($imageEntry);
+
+  var $otherDiv = document.createElement('div');
+  $otherDiv.setAttribute('class', 'column-half');
+  $li.appendChild($otherDiv);
+
+  var $h2 = document.createElement('h2');
+  $h2.setAttribute('class', 'title');
+  $h2.textContent = entry.title;
+  $otherDiv.appendChild($h2);
+
+  var $p = document.createElement('p');
+  $p.setAttribute('class', 'notes');
+  $p.textContent = entry.notes;
+  $otherDiv.appendChild($p);
+
+  return $parentDiv;
+}
+
+entriesList(data.entries[0]);
