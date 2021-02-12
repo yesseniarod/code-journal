@@ -81,7 +81,6 @@ var $mainH1 = document.querySelector('h1');
 var $topPageDiv = document.querySelector('.top-page');
 var $dataViewEntries = document.querySelector('#entries');
 var $entries = document.querySelector('.entriesHeader');
-// console.log($dataViewEntries);
 
 function newEntry(event) {
   if (event.target.matches('.new')) {
