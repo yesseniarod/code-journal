@@ -21,12 +21,13 @@
 
       <header>
       <h2>Code Journal</h2>
+      <h3><a href="#" class="entriesHeader">Entries</a></h3>
       </header>
 
 <div class="container">
   <main>
-    <h1>New Entry</h1>
-    <div data-view="entry-form">
+    <h1 class="hidden">New Entry</h1>
+    <div data-view="entry-form" class="hidden">
       <form>
         <div class="row">
           <div class="column-half">
@@ -56,6 +57,15 @@
           </div>
 
         </form>
+    </div>
+    <div class="top-page">
+    <h1>Entries</h1>
+      <a href="#" class="new">New</a>
+    </div>
+    <div data-view="entries" id="entries">
+      <ul>
+
+      </ul>
     </div>
   </main>
   </div>

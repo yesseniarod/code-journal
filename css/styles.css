@@ -4,14 +4,19 @@ body {
 
 header {
   background-color: mediumpurple;
-  height: 3em;
+  height: 2.75em;
   color: white;
+  display: flex;
+  align-items: baseline;
 }
 
 h2 {
-  margin-left: 1em;
   font-size: 1.25em;
   padding-top: 0.5em;
+}
+
+h3 {
+  margin-left: 1em;
 }
 
 h1 {
@@ -51,4 +56,39 @@ button {
   color: white;
   border-radius: 0.5em;
   background-color: mediumpurple;
+  margin-bottom: 2em;
+}
+
+.top-page {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: 1em;
+}
+
+a {
+  text-decoration: none;
+  background-color: mediumpurple;
+  color: white;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  border-radius: 0.3em;
+}
+
+div[data-view="entries"] {
+  display: flex;
+}
+
+ul {
+  list-style: none;
+}
+
+.title {
+  margin-left: -0.1em;
+  margin-bottom: 0.4em;
+  margin-top: 1em;
+}
+
+.notes {
+  margin-bottom: 2em;
 }

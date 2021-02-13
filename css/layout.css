@@ -32,11 +32,15 @@
     width: 50%;
   }
 
-  h2 {
-    margin-left: 2em;
-  }
-
   h1 {
     margin-left: 0.5em;
+  }
+
+  h2 {
+    margin-left: 15%;
+  }
+
+  li {
+    display: flex;
   }
 }
