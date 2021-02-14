@@ -119,4 +119,11 @@ $ul.addEventListener('click', function (event) {
     $topPageDiv.className = 'hidden';
     $dataViewEntries.className = 'hidden';
   }
+  // var $entryId = element.getAttribute('data-entry-id');
+  // console.log($entryId);
+  // for (var j = 0; j < data.entries.length; j++) {
+  //   if (data.entries[j].entryId === $entryId) {
+  //     data.entries[j] = data.editing;
+  //   }
+  // }
 });
