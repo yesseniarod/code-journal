@@ -112,6 +112,11 @@ function viewEntry(event) {
 $entries.addEventListener('click', viewEntry);
 $button.addEventListener('click', viewEntry);
 
-// $ul.addEventListener('click', function (event) {
-
-// })
+$ul.addEventListener('click', function (event) {
+  if (event.target.matches('i')) {
+    $dataViewForm.removeAttribute('class');
+    $mainH1.removeAttribute('class');
+    $topPageDiv.className = 'hidden';
+    $dataViewEntries.className = 'hidden';
+  }
+});
