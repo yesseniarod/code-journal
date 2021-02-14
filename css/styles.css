@@ -83,6 +83,15 @@ ul {
   list-style: none;
 }
 
+i.fas.fa-pen {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 1.3em;
+  color: darkgrey;
+  padding-bottom: 2.5em;
+  margin-top: -1.5em;
+}
+
 .title {
   margin-left: -0.1em;
   margin-bottom: 0.4em;

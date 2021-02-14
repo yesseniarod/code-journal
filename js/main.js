@@ -55,6 +55,10 @@ function entriesList(entry) {
   $h2.textContent = entry.title;
   $otherDiv.appendChild($h2);
 
+  var $icon = document.createElement('i');
+  $icon.setAttribute('class', 'fas fa-pen');
+  $otherDiv.appendChild($icon);
+
   var $p = document.createElement('p');
   $p.setAttribute('class', 'notes');
   $p.textContent = entry.notes;
