@@ -111,3 +111,7 @@ function viewEntry(event) {
 
 $entries.addEventListener('click', viewEntry);
 $button.addEventListener('click', viewEntry);
+
+// $ul.addEventListener('click', function (event) {
+
+// })
