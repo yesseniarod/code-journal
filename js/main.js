@@ -36,6 +36,7 @@ function entriesList(entry) {
   $parentDiv.setAttribute('class', 'row');
 
   var $li = document.createElement('li');
+  $li.setAttribute('data-entry-id', entry.entryId);
   $parentDiv.appendChild($li);
 
   var $div = document.createElement('div');
